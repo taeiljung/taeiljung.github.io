@@ -156,7 +156,7 @@ yat:
 # Page default value
 # defaults:
 #   home:
-#     heading: "The blog"
+#     heading: "Your awesome heading"
 #     subheading: "Your awesome subheading"
 #     banner: "Your image url"
 

@@ -1,15 +1,7 @@
 @charset "utf-8";
-*{margin: 0;padding: 0;color: #fff;}
+*{margin: 0;padding: 0;color: #ccc;font-family: arial;}
 ul,li{list-style: none;}
 body{background: #000;}
 a{text-decoration: none;}
 #app{width: 100%;height: 100%;}
-#app .wrap{width: 85%;height: calc(90vh - 10px); margin: 0 auto;margin-top: 50px;display: flex;justify-content: space-between;}
-#app .wrap .in{width: 50%;position: relative;height: 600px;background: #a99;}
-#app .wrap .in a{margin-left: 70px;font-size: 6em;position: absolute;left: 0;right: 0;top: 0;bottom: 0;}
-#app .wrap .in .a1{top: 00px;}
-#app .wrap .in .a2{top: 80px;}
-#app .wrap .in .a3{top: 160px;}
-#app .wrap .in .a4{top: 240px;}
-#app .wrap .in .a5{top: 320px;}
-#app .wrap .in .a6{top: 400px;}
+#app .wrap{width: 90%;height: 600px;background: #a99;margin: 0 auto;margin-top: 50px;display: grid;}

@@ -1,7 +1,70 @@
 @charset "utf-8";
-*{margin: 0;padding: 0;color: #ccc;font-family: arial;}
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+*{margin: 0;padding: 0;color: #ccc;font-family: 'Jeju Gothic', serif;}
+/**/
+/*font-family: 'Nanum Gothic', serif;*/
 ul,li{list-style: none;}
-body{background: #000;}
+body{background: #000;overflow-y: hidden;}
 a{text-decoration: none;}
+
+/*
+grid의 형태정의
+grid-template-rows
+grid-template-columns
+ex: grid-template-columns: 1fr 1fr 1fr, 1대 1대 1비율인 3개의 컬럼을 의미
+	grid-template-rows: 1fr 1fr 1fr, 1대 1대 1비율인 3개의 로우를 의미
+	grid-template-rows: repeat(3, 1fr), repeat 함수 사용으로 5개의 row를 의미,위와 같음
+	grid-template-rows: repeat(3, 1fr), repeat 함수 사용으로 5개의 row를 의미,위와 같음
+	repeat(3, 1fr 4fr 2fr)처럼 사용할 수도 있는데... 그럼굳이 이렇게 쓸필요가 있나;
+	grid-template-rows: repeat(3, minmax(100px, auto))-> 최소높이 100px 최대 자동으로.
+	columns: repeat(auto-fill, minmax(20%, auto));이렇게 사용하면
+	최소 20% 최대 자동으로 공간을 빈곳없이 채우란것
+
+gap: 20px;은 내용간의 너비를 설정. row-gap 또는 column-gap 으로 사용가능.
+margin과 비슷한개념. 내부여백만 작용
+*/
 #app{width: 100%;height: 100%;}
-#app .wrap{width: 90%;height: 600px;background: #a99;margin: 0 auto;margin-top: 50px;display: grid;}
+#app .wrap{width: 90%;height: 90vh;margin: 0 auto;margin-top: 50px;}
+#app .wrap .grid{width: 100%;height: 100%;display: grid;grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr 6fr 1fr;}
+
+#app .wrap .grid .title{width: 100%;height: 100%;display: flex;}
+#app .wrap .grid .a1{grid-row: 1/span 1;grid-column: 1 / span 1;}
+#app .wrap .grid .a2{grid-row: 1/span 1;grid-column: 2 / span 1;}
+#app .wrap .grid .a3{grid-row: 1/span 1;grid-column: 3 / span 1;}
+#app .wrap .grid .a4{grid-row: 1/span 1;grid-column: 4 / span 1;justify-content: flex-end;}
+
+#app .wrap .grid .a5{grid-row: 2/span 1;grid-column: 1 / span 2;}
+#app .wrap .grid .a6{grid-row: 2/span 1;grid-column: 3 / span 2;}
+
+#app .wrap .grid .a7{grid-row: 3/span 1;grid-column: 1 / span 1;align-items: flex-end;}
+#app .wrap .grid .a8{grid-row: 3/span 1;grid-column: 2 / span 1;align-items: flex-end;}
+#app .wrap .grid .a9{grid-row: 3/span 1;grid-column: 3 / span 1;align-items: flex-end;}
+#app .wrap .grid .a10{grid-row:3/span 1;grid-column: 4 / span 1;justify-content: flex-end;align-items: flex-end;}
+
+#app .wrap .grid .a6 {flex-flow: column;align-items: flex-start;justify-content: center;position: relative;}
+#app .wrap .grid .a6 div{width: 100%;height: 16.66666666666667%;position: absolute;left: 0;right: 0; top: 0;overflow: hidden;}
+#app .wrap .grid .a6 .box1{top:calc(100% - 67.8vh)}
+#app .wrap .grid .a6 .box2{top:calc(100% - 56.6vh)}
+#app .wrap .grid .a6 .box3{top:calc(100% - 45.3vh)}
+#app .wrap .grid .a6 .box4{top:calc(100% - 34vh)}
+#app .wrap .grid .a6 .box5{top:calc(100% - 22.8vh)}
+#app .wrap .grid .a6 .box6{top:calc(100% - 11.5vh)}
+
+#app .wrap .grid .a6 a{height: 100%;width: 100%;font-size:10vh;font-family: 'Nanum Gothic', serif;transition: .6s;position: relative;}
+#app .wrap .grid .a6 a::before{content:'';display: block;width: 600px;height: 100px;background: #249;position: absolute;z-index: -1;left: -600px;top: 40px;transition: .3s;}
+#app .wrap .grid .a6 .box1:hover a{font-size: 10.5vh;transition: .6s;}
+#app .wrap .grid .a6 .box2:hover a{font-size: 10.5vh;transition: .6s;}
+#app .wrap .grid .a6 .box3:hover a{font-size: 10.5vh;transition: .6s;}
+#app .wrap .grid .a6 .box4:hover a{font-size: 10.5vh;transition: .6s;}
+#app .wrap .grid .a6 .box5:hover a{font-size: 10.5vh;transition: .6s;}
+#app .wrap .grid .a6 .box6:hover a{font-size: 10.5vh;transition: .6s;}
+#app .wrap .grid .a6 .box1:hover a::before,
+#app .wrap .grid .a6 .box2:hover a::before,
+#app .wrap .grid .a6 .box3:hover a::before,
+#app .wrap .grid .a6 .box4:hover a::before,
+#app .wrap .grid .a6 .box5:hover a::before,
+#app .wrap .grid .a6 .box6:hover a::before{left: 0;transition: .4s;}
+
+/*#app .another{width: 100%;height: 100vh;background: #a99;margin-top: 10vh;}*/

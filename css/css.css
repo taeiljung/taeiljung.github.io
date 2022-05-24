@@ -1,12 +1,14 @@
 @charset "utf-8";
 @font-face {font-family: nanum; src: url(../fonts/NanumBarunGothic.ttf);}
 @font-face {font-family: Jeju; src: url(../fonts/JejuGothic-Regular.ttf);}
-*{margin: 0;padding: 0;color: #ccc;font-family: 'nanum', serif;}
+*{margin: 0;padding: 0;color: #ccc;font-family: 'Jeju', serif;}
 /**/
 /*font-family: 'Nanum Gothic', serif;*/
 ul,li{list-style: none;}
 body{background: #000;overflow-y: hidden;}
 a{text-decoration: none;}
+body{position: relative;}
+.circle{width: 50px;height: 50px;border: 1px solid #fff;border-radius: 30px;position: absolute;left: 0;top: 0; transform: translate(-50%, -140%);}
 
 /*
 grid의 형태정의
@@ -28,7 +30,7 @@ margin과 비슷한개념. 내부여백만 작용
 #app .wrap{width: 90%;height: 90vh;margin: 0 auto;margin-top: 50px;}
 #app .wrap .grid{width: 100%;height: 100%;display: grid;grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr 6fr 1fr;}
 
-#app .wrap .grid .title{width: 100%;height: 100%;display: flex;}
+#app .wrap .grid .title{width: 100%;height: 100%;display: flex;position: relative;z-index: 9999;}
 #app .wrap .grid .a1{grid-row: 1/span 1;grid-column: 1 / span 1;}
 #app .wrap .grid .a2{grid-row: 1/span 1;grid-column: 2 / span 1;}
 #app .wrap .grid .a3{grid-row: 1/span 1;grid-column: 3 / span 1;}

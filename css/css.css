@@ -1,7 +1,7 @@
 @charset "utf-8";
 @font-face {font-family: nanum; src: url(../fonts/NanumBarunGothic.ttf);}
 @font-face {font-family: Jeju; src: url(../fonts/JejuGothic-Regular.ttf);}
-*{margin: 0;padding: 0;color: #ccc;font-family: 'Jeju', serif;}
+*{margin: 0;padding: 0;color: #ccc;font-family: 'nanum', serif;}
 /**/
 /*font-family: 'Nanum Gothic', serif;*/
 ul,li{list-style: none;}

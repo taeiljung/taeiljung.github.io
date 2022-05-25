@@ -27,14 +27,18 @@ gap: 20px;은 내용간의 너비를 설정. row-gap 또는 column-gap 으로 �
 margin과 비슷한개념. 내부여백만 작용
 */
 @keyframes change{
-	0%		{background: #000;}
-	25%		{background: #222;}
-	45%		{background: #444;}
-	55%		{background: #444;}
-	75%		{background: #222;}
-	100%	{background: #000;}
+	0%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
+	10%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
+	20%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.1;}
+	30%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.2;}
+	40%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.3;}
+	50%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.3;}
+	60%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.2;}
+	80%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.1;}
+	90%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
+	100%	{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
 }
-#bulk{position: absolute;width: 100%;height: 100vh;opacity: .3;background: #fff;animation: change 5s infinite linear;}
+#bulk{position: absolute;width: 100%;height: 100vh;opacity: .3;background: linear-gradient(45deg,#000,#000);animation: change 10s infinite linear}
 #app{width: 100%;height: 100%;position: relative;z-index: 2;top: 5vh;}
 #app .wrap{width: 90%;height: 90vh;margin: 0 auto;position: relative;}
 #app .wrap .grid{width: 100%;height: 100%;display: grid;grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr 6fr 1fr;position: absolute;left: 0;right: 0;bottom: 0;top: 0;}

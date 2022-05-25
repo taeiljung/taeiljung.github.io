@@ -1,12 +1,13 @@
 window.onload = main();
-document.addEventListener('DOMContentLoaded', function () {
-  particleground(document.getElementById('particle'), {
-    dotColor: '#fff',
-    lineColor: '#fff'
-  });
-}, false);
 function main(){
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  particleground(document.getElementById('particle'), {
+    dotColor: '#ccc',
+    lineColor: '#ccc'
+  });
+}, false);
 
 /*
 const content = "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._";

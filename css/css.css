@@ -1,14 +1,14 @@
 @charset "utf-8";
-@font-face {font-family: nanum; src: url(../fonts/NanumBarunGothic.ttf);}
-@font-face {font-family: Jeju; src: url(../fonts/JejuGothic-Regular.ttf);}
-*{margin: 0;padding: 0;color: #ccc;font-family: 'Jeju', serif;}
+@font-face {font-family: nanum; src: url(../fonts/NanumBarunGothicLight.ttf);}
+@font-face {font-family: Jeju; src: url(../fonts/NanumBarunGothicUltraLight.ttf);}
+*{margin: 0;padding: 0;font-family: 'Jeju', serif;}
 /**/
 /*font-family: 'Nanum Gothic', serif;*/
 ul,li{list-style: none;}
-a{text-decoration: none;}
+a{text-decoration: none;color: #fff;}
 body{position: relative;overflow-y: hidden;}
 /*.circle{width: 50px;height: 50px;border: 1px solid #fff;border-radius: 30px;position: absolute;left: 0;top: 0; transform: translate(-50%, -140%);z-index: 9999;}*/
-#particle{width: 100%;height: 100vh;overflow: hidden;position: absolute;background: #000;z-index: 1;left: 0;top: 0;bottom: 0;right: 0;opacity: .8;}
+#particle{width: 100%;height: 100vh;overflow: hidden;position: absolute;background: #000;z-index: 0;left: 0;top: 0;bottom: 0;right: 0;opacity: 1;}
 
 /*
 grid의 형태정의
@@ -26,11 +26,20 @@ ex: grid-template-columns: 1fr 1fr 1fr, 1대 1대 1비율인 3개의 컬럼을 �
 gap: 20px;은 내용간의 너비를 설정. row-gap 또는 column-gap 으로 사용가능.
 margin과 비슷한개념. 내부여백만 작용
 */
+@keyframes change{
+	0%		{background: #000;}
+	25%		{background: #222;}
+	45%		{background: #444;}
+	55%		{background: #444;}
+	75%		{background: #222;}
+	100%	{background: #000;}
+}
+#bulk{position: absolute;width: 100%;height: 100vh;opacity: .3;background: #fff;animation: change 5s infinite linear;}
 #app{width: 100%;height: 100%;position: relative;z-index: 2;top: 5vh;}
 #app .wrap{width: 90%;height: 90vh;margin: 0 auto;}
 #app .wrap .grid{width: 100%;height: 100%;display: grid;grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr 6fr 1fr;}
 
-#app .wrap .grid .title{width: 100%;height: 100%;display: flex;position: relative;z-index: 3;}
+#app .wrap .grid .title{width: 100%;height: 100%;display: flex;position: relative;z-index: 3;color: #fff;}
 #app .wrap .grid .a1{grid-row: 1/span 1;grid-column: 1 / span 1;}
 #app .wrap .grid .a2{grid-row: 1/span 1;grid-column: 2 / span 1;}
 #app .wrap .grid .a3{grid-row: 1/span 1;grid-column: 3 / span 1;}
@@ -48,7 +57,7 @@ margin과 비슷한개념. 내부여백만 작용
 
 #app .wrap .grid .a6 {flex-flow: column;align-items: flex-start;justify-content: center;position: relative;}
 #app .wrap .grid .a6 div{width: 100%;height: 16.66666666666667%;position: absolute;left: 0;right: 0; top: 0;overflow: hidden;}
-#app .wrap .grid .a6 .box1{top:calc(100% - 67.8vh)}
+#app .wrap .grid .a6 .box1{top:calc(100% - 6 	7.8vh)}
 #app .wrap .grid .a6 .box2{top:calc(100% - 56.6vh)}
 #app .wrap .grid .a6 .box3{top:calc(100% - 45.3vh)}
 #app .wrap .grid .a6 .box4{top:calc(100% - 34vh)}
@@ -56,7 +65,7 @@ margin과 비슷한개념. 내부여백만 작용
 #app .wrap .grid .a6 .box6{top:calc(100% - 11.5vh)}
 
 #app .wrap .grid .a6 a{height: 100%;width: 100%;font-size:10vh;font-family: nanum;transition: .6s;position: relative;text-shadow: 2px 2px #000;color: #fff;}
-#app .wrap .grid .a6 a::before{content:'';display: block;width: 600px;height: 100px;background: #249;position: absolute;z-index: -1;left: -600px;top: 40px;}
+#app .wrap .grid .a6 a::before{content:'';display: block;width: 600px;height: 9vh;background: #666;position: absolute;z-index: -1;left: -600px;top: 40px;}
 #app .wrap .grid .a6 .box1 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}
 #app .wrap .grid .a6 .box2 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}
 #app .wrap .grid .a6 .box3 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}

@@ -7,7 +7,7 @@
 ul,li{list-style: none;}
 body{background: #000;overflow-y: hidden;}
 a{text-decoration: none;}
-body{position: relative;}
+body{position: relative;background: #111;}
 /*.circle{width: 50px;height: 50px;border: 1px solid #fff;border-radius: 30px;position: absolute;left: 0;top: 0; transform: translate(-50%, -140%);z-index: 9999;}*/
 
 /*

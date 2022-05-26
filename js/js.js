@@ -3,8 +3,6 @@ function main(){
 
 }
 
-/*button 3개를 만들어 색상변경 기능구현*/
-
 /*slide part*/
 var menu = document.querySelector("#app > div > div.grid.g1.selected > div.title.a4 > a");
 var xbutton = document.querySelector("body > div.menu > .quit");
@@ -16,7 +14,31 @@ xbutton.addEventListener('click',function(){
     slider.classList.remove('click');
 })
 
+/*bulk(bg) change part*/
+let bg = document.querySelector("#bulk");
+let btn1 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch1");
+let btn2 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch2");
+let btn3 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch3");
 
+btn1.addEventListener('click',function(){
+    bg.classList.remove('c2');
+    bg.classList.remove('c3');
+    bg.classList.add('c1');
+    /*document.getElementById('particle').style.display='block';*/
+})
+btn2.addEventListener('click',function(){
+    bg.classList.remove('c1');
+    bg.classList.remove('c3');
+    bg.classList.add('c2');
+    /*document.getElementById('particle').style.display='block';*/
+})
+btn3.addEventListener('click',function(){
+    bg.classList.remove('c1');
+    bg.classList.remove('c2');
+    bg.classList.add('c3');
+    /*document.getElementById('particle').style.display='block';*/
+})
+ /* dot settings*/
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particle'), {
     dotColor: '#333',
@@ -25,6 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     parallaxMultiplier:'20'
   });
 }, false);
+
 
 /*
 const content = "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._";

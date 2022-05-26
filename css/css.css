@@ -27,7 +27,7 @@ ex: grid-template-columns: 1fr 1fr 1fr, 1대 1대 1비율인 3개의 컬럼을 �
 gap: 20px;은 내용간의 너비를 설정. row-gap 또는 column-gap 으로 사용가능.
 margin과 비슷한개념. 내부여백만 작용
 */
-@keyframes change{
+@keyframes change1{
 	0%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
 	10%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
 	20%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.1;}
@@ -39,7 +39,36 @@ margin과 비슷한개념. 내부여백만 작용
 	90%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
 	100%	{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
 }
-#bulk{position: absolute;width: 100%;height: 100vh;opacity: .3;background: linear-gradient(45deg,#000,#000);animation: change 10s infinite linear}
+@keyframes change2{
+	0%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+	10%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+	20%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+	30%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.2;}
+	40%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.3;}
+	50%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.3;}
+	60%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.2;}
+	80%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+	90%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+	100%	{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+}
+@keyframes change3{
+	0%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
+	10%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
+	20%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.2;}
+	30%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.3;}
+	40%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.4;}
+	50%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.4;}
+	60%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.3;}
+	80%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.2}
+	90%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
+	100%	{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
+}
+#bulk{position: absolute;width: 100%;height: 100vh;opacity: .3;background: linear-gradient(45deg,#000,#000);/*animation-duration:10s;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both;*/}
+#bulk.c1{animation:change1 10s infinite linear !important}
+#bulk.c2{animation:change2 10s infinite linear !important}
+#bulk.c3{animation:change3 10s infinite linear !important}
+
+
 #app{width: 100%;height: 100%;position: relative;z-index: 2;top: 5vh;}
 #app .wrap{width: 90%;height: 90vh;margin: 0 auto;position: relative;}
 #app .wrap .grid{width: 100%;height: 100%;display: grid;grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr 6fr 1fr;position: absolute;left: 0;right: 0;bottom: 0;top: 0;}
@@ -91,8 +120,9 @@ margin과 비슷한개념. 내부여백만 작용
 
 #app .wrap .g2{display: none;}
 
-.menu{position: absolute;top: 0;right: 0;bottom: 0;background: rgba(255, 255, 255, .3);width: 20%;height: 100vh;transform: translateX(100%);transition: .3s;}
-.menu.click{transform: initial;transition: .3s;}
+.menu{position: absolute;top: 0;right: 0;bottom: 0;background: rgba(100, 100, 100, 1);width: 100vw;height: 100vh;transform: translateX(100%);transition: .3s;z-index: 4;opacity: 0;}
+.menu.click{transform: initial;transition: .3s;opacity: 1;}
+.menu.click .quit{position: absolute;right: 50px;top: 50px;cursor: pointer;font-size: 20px;z-index: 5;font-weight: bold;}
 
 
 /*#app .another{width: 100%;height: 100vh;background: #a99;margin-top: 10vh;}*/

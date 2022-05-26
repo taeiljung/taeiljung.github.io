@@ -6,7 +6,10 @@
 * 개인홈페이지 제작연습
 
 ## 제작기간
-+ `04월~06월` / index.html,css,javascript
-+ 각 기타항목
+* `04월~06월`
+
+## . . . 
+* grid 구현
+* javascript, jquery사용
 
 ***

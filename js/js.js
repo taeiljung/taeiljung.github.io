@@ -6,7 +6,9 @@ function main(){
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particle'), {
     dotColor: '#999',
-    lineColor: '#999'
+    lineColor: '#999',
+    particleRadius:'4'
+    /*parallaxMultiplier:'100'*/
   });
 }, false);
 

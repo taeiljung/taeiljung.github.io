@@ -6,8 +6,8 @@
 /**/
 /*font-family: 'Nanum Gothic', serif;*/
 ul,li{list-style: none;}
-a{text-decoration: none;color: #fff;}
-body{position: relative;overflow-y: hidden;}
+a{text-decoration: none;color: #fff;display: inline-block;}
+body{position: relative;overflow-y: hidden;overflow-x: hidden;}
 /*.circle{width: 50px;height: 50px;border: 1px solid #fff;border-radius: 30px;position: absolute;left: 0;top: 0; transform: translate(-50%, -140%);z-index: 9999;}*/
 #particle{width: 100%;height: 100vh;overflow: hidden;position: absolute;background: #000;z-index: 0;left: 0;top: 0;bottom: 0;right: 0;opacity: 1;}
 
@@ -44,7 +44,9 @@ margin과 비슷한개념. 내부여백만 작용
 #app .wrap{width: 90%;height: 90vh;margin: 0 auto;position: relative;}
 #app .wrap .grid{width: 100%;height: 100%;display: grid;grid-template-columns: repeat(4,1fr);grid-template-rows: 1fr 6fr 1fr;position: absolute;left: 0;right: 0;bottom: 0;top: 0;}
 
+
 #app .wrap .grid .title{width: 100%;height: 100%;display: flex;position: relative;z-index: 3;color: #fff;}
+#app .wrap .grid .title a{height: 20px;}
 #app .wrap .grid .a1{grid-row: 1/span 1;grid-column: 1 / span 1;}
 #app .wrap .grid .a2{grid-row: 1/span 1;grid-column: 2 / span 1;}
 #app .wrap .grid .a3{grid-row: 1/span 1;grid-column: 3 / span 1;}
@@ -71,7 +73,7 @@ margin과 비슷한개념. 내부여백만 작용
 #app .wrap .grid .a6 .box5{top:calc(100% - 22.8vh)}
 #app .wrap .grid .a6 .box6{top:calc(100% - 11.5vh)}
 
-#app .wrap .grid .a6 a{height: 100%;width: 100%;font-size:10vh;font-family: nanum;transition: .6s;position: relative;text-shadow: 2px 2px #000;color: #fff;}
+#app .wrap .grid .a6 a{height: 100%;font-size:10vh;font-family: nanum;transition: .6s;position: relative;text-shadow: 2px 2px #000;color: #fff;}
 #app .wrap .grid .a6 a::before{content:'';display: block;width: 600px;height: 9vh;background: #666;position: absolute;z-index: -1;left: -600px;top: 6vh;}
 #app .wrap .grid .a6 .box1 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}
 #app .wrap .grid .a6 .box2 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}
@@ -88,6 +90,9 @@ margin과 비슷한개념. 내부여백만 작용
 
 
 #app .wrap .g2{display: none;}
+
+.menu{position: absolute;top: 0;right: 0;bottom: 0;background: rgba(255, 255, 255, .3);width: 20%;height: 100vh;transform: translateX(100%);transition: .3s;}
+.menu.click{transform: initial;transition: .3s;}
 
 
 /*#app .another{width: 100%;height: 100vh;background: #a99;margin-top: 10vh;}*/

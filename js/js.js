@@ -19,30 +19,31 @@ let bg = document.querySelector("#bulk");
 let btn1 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch1");
 let btn2 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch2");
 let btn3 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch3");
+let bulk1 = document.querySelector("#bulk.b1");
+let bulk2 = document.querySelector("#bulk.b2");
+let bulk3 = document.querySelector("#bulk.b3");
 
 btn1.addEventListener('click',function(){
-    bg.classList.remove('c2');
-    bg.classList.remove('c3');
-    bg.classList.add('c1');
-    /*document.getElementById('particle').style.display='block';*/
+    bulk1.classList.add('vi');
+    bulk2.classList.remove('vi');
+    bulk3.classList.remove('vi');
 })
 btn2.addEventListener('click',function(){
-    bg.classList.remove('c1');
-    bg.classList.remove('c3');
-    bg.classList.add('c2');
-    /*document.getElementById('particle').style.display='block';*/
+    bulk1.classList.remove('vi');
+    bulk2.classList.add('vi');
+    bulk3.classList.remove('vi');
 })
 btn3.addEventListener('click',function(){
-    bg.classList.remove('c1');
-    bg.classList.remove('c2');
-    bg.classList.add('c3');
-    /*document.getElementById('particle').style.display='block';*/
+    bulk1.classList.remove('vi');
+    bulk2.classList.remove('vi');
+    bulk3.classList.add('vi');
 })
+
  /* dot settings*/
 document.addEventListener('DOMContentLoaded', function () {
   particleground(document.getElementById('particle'), {
-    dotColor: '#333',
-    lineColor: '#333',
+    dotColor: '#F2E3D5',
+    lineColor: '#F2E3D5',
     particleRadius:'5',
     parallaxMultiplier:'20'
   });

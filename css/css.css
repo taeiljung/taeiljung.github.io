@@ -4,6 +4,13 @@
 @font-face {font-family: Jeju; src: url(../fonts/NanumBarunGothicUltraLight.ttf);}
 *{margin: 0;padding: 0;font-family: 'Jeju', serif;}
 /**/
+/* Color Theme Swatches in Hex */
+.Deep-Teal-Sea-1-hex { color: #012E40; }
+.Deep-Teal-Sea-2-hex { color: #024959; }
+.Deep-Teal-Sea-3-hex { color: #026773; }
+.Deep-Teal-Sea-4-hex { color: #3CA6A6; }
+.Deep-Teal-Sea-5-hex { color: #F2E3D5; }
+
 /*font-family: 'Nanum Gothic', serif;*/
 ul,li{list-style: none;}
 a{text-decoration: none;color: #fff;display: inline-block;}
@@ -28,45 +35,48 @@ gap: 20px;은 내용간의 너비를 설정. row-gap 또는 column-gap 으로 �
 margin과 비슷한개념. 내부여백만 작용
 */
 @keyframes change1{
-	0%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
-	10%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
-	20%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.1;}
-	30%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.2;}
-	40%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.3;}
-	50%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.3;}
-	60%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.2;}
-	80%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.1;}
-	90%		{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
-	100%	{background: linear-gradient(45deg,#000,#fff);opacity: 0.0;}
+	0%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.3;}
+	10%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.3;}
+	20%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.4;}
+	30%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.5;}
+	40%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.6;}
+	50%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.6;}
+	60%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.6;}
+	80%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.5;}
+	90%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.4;}
+	100%	{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.4;}
 }
 @keyframes change2{
-	0%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
-	10%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
-	20%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
-	30%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.2;}
-	40%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.3;}
-	50%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.3;}
-	60%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.2;}
-	80%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
-	90%		{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
-	100%	{background: linear-gradient(90deg,#f00,#00f);opacity: 0.1;}
+	0%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.3;}
+	10%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.3;}
+	20%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.4;}
+	30%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.5;}
+	40%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.6;}
+	50%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.6;}
+	60%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.6;}
+	80%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.5;}
+	90%		{background: linear-gradient(45deg,#024959,#026773);opacity: 0.4;}
+	100%	{background: linear-gradient(45deg,#024959,#026773);opacity: 0.4;}
 }
 @keyframes change3{
-	0%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
-	10%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
-	20%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.2;}
-	30%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.3;}
-	40%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.4;}
-	50%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.4;}
-	60%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.3;}
-	80%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.2}
-	90%		{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
-	100%	{background: linear-gradient(45deg,#3f3,#f3f);opacity: 0.1;}
+	0%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.3;}
+	10%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.3;}
+	20%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
+	30%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.5;}
+	40%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.6;}
+	50%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.6;}
+	60%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.6;}
+	80%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.5;}
+	90%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
+	100%	{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
 }
-#bulk{position: absolute;width: 100%;height: 100vh;opacity: .3;background: linear-gradient(45deg,#000,#000);/*animation-duration:10s;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both;*/}
-#bulk.c1{animation:change1 10s infinite linear !important}
-#bulk.c2{animation:change2 10s infinite linear !important}
-#bulk.c3{animation:change3 10s infinite linear !important}
+#bulk{position: absolute;width: 100%;height: 100vh;opacity:0;background: linear-gradient(45deg,#000,#000);/*animation-duration:10s;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both;*/visibility: hidden;}
+#bulk.b1{animation:change1 5s infinite linear !important;visibility: hidden;}
+#bulk.b1.vi{visibility: visible;}
+#bulk.b2{animation:change2 5s infinite linear !important;visibility: hidden;}
+#bulk.b2.vi{visibility: visible;}
+#bulk.b3{animation:change3 5s infinite linear !important;visibility: hidden;}
+#bulk.b3.vi{visibility: visible;}
 
 
 #app{width: 100%;height: 100%;position: relative;z-index: 2;top: 5vh;}
@@ -103,7 +113,7 @@ margin과 비슷한개념. 내부여백만 작용
 #app .wrap .grid .a6 .box6{top:calc(100% - 11.5vh)}
 
 #app .wrap .grid .a6 a{height: 100%;font-size:10vh;font-family: nanum;transition: .6s;position: relative;text-shadow: 2px 2px #000;color: #fff;}
-#app .wrap .grid .a6 a::before{content:'';display: block;width: 600px;height: 9vh;background: #666;position: absolute;z-index: -1;left: -600px;top: 6vh;}
+#app .wrap .grid .a6 a::before{content:'';display: block;width: 600px;height: 9vh;background: #026773;position: absolute;z-index: -1;left: -600px;top: 6vh;}
 #app .wrap .grid .a6 .box1 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}
 #app .wrap .grid .a6 .box2 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}
 #app .wrap .grid .a6 .box3 a:hover {font-size: 10.1vh;transition: .6s;color: #fff;}

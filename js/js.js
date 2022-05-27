@@ -16,7 +16,7 @@ xbutton.addEventListener('click',function(){
 
 /*bulk(bg) change part*/
 let bg = document.querySelector("#bulk");
-let btn1 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch1");
+/*let btn1 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch1");
 let btn2 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch2");
 let btn3 = document.querySelector("#app > div > div.grid.g1.selected > div.title.a8 > a.ch3");
 let bulk1 = document.querySelector("#bulk.b1");
@@ -37,7 +37,7 @@ btn3.addEventListener('click',function(){
     bulk1.classList.remove('vi');
     bulk2.classList.remove('vi');
     bulk3.classList.add('vi');
-})
+})*/
 
  /* dot settings*/
 document.addEventListener('DOMContentLoaded', function () {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 }, false);
 
 
-/*
+
 const content = "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._";
 const text = document.querySelector(".typing");
 console.log(text.textContent)
@@ -59,14 +59,14 @@ let index = 0;
  function sleep(delay){ 
      const start = new Date().getTime(); 
      while (new Date().getTime() < start + delay); 
-    }*/
+    }
 
-/*function typing(){
+function typing(){
     text.textContent += content[index++];
     if(index > content.length){
         text.textContent = ""
         index = 0;
-        sleep(3000);
+        sleep(0);
     }
 }
-setInterval(typing, 200)*/
+setInterval(typing, 200)

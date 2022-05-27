@@ -34,7 +34,12 @@ ex: grid-template-columns: 1fr 1fr 1fr, 1대 1대 1비율인 3개의 컬럼을 �
 gap: 20px;은 내용간의 너비를 설정. row-gap 또는 column-gap 으로 사용가능.
 margin과 비슷한개념. 내부여백만 작용
 */
-@keyframes change1{
+@keyframes change{
+	0%		{background: #024959;}
+	50%	{background: #3CA6A6;}
+	100%	{background: #024959;}
+}
+/*@keyframes change{
 	0%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.3;}
 	10%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.3;}
 	20%		{background: linear-gradient(45deg,#012E40,#024959);opacity: 0.4;}
@@ -69,14 +74,14 @@ margin과 비슷한개념. 내부여백만 작용
 	80%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.5;}
 	90%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
 	100%	{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
-}
-#bulk{position: absolute;width: 100%;height: 100vh;opacity:0;background: linear-gradient(45deg,#000,#000);/*animation-duration:10s;animation-timing-function:linear;animation-iteration-count:infinite;animation-fill-mode:both;*/visibility: hidden;}
-#bulk.b1{animation:change1 5s infinite linear !important;visibility: hidden;}
-#bulk.b1.vi{visibility: visible;}
+}*/
+#bulk{position: absolute;width: 100%;height: 100vh;opacity:.3;background: linear-gradient(45deg,#000,#000);animation:change 5s infinite linear;transition-property: all;}
+
+/*#bulk.b1.vi{visibility: visible;}
 #bulk.b2{animation:change2 5s infinite linear !important;visibility: hidden;}
 #bulk.b2.vi{visibility: visible;}
 #bulk.b3{animation:change3 5s infinite linear !important;visibility: hidden;}
-#bulk.b3.vi{visibility: visible;}
+#bulk.b3.vi{visibility: visible;}*/
 
 
 #app{width: 100%;height: 100%;position: relative;z-index: 2;top: 5vh;}

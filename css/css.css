@@ -142,3 +142,6 @@ margin과 비슷한개념. 내부여백만 작용
 
 /*#app .another{width: 100%;height: 100vh;background: #a99;margin-top: 10vh;}*/
 
+@media screen and (max-width:800px){
+	*{display: none;}
+}

@@ -2,7 +2,10 @@
 @import url(./mobile.css) screen and (min-width: 0px) and (max-width: 800px);
 @font-face {font-family: nanum; src: url(../fonts/NanumBarunGothicLight.ttf);}
 @font-face {font-family: Jeju; src: url(../fonts/NanumBarunGothicUltraLight.ttf);}
+
+@media screen and (min-width: 800px) and (max-width: 3000px){
 *{margin: 0;padding: 0;font-family: 'Jeju', serif;}
+
 /**/
 /* Color Theme Swatches in Hex */
 .Deep-Teal-Sea-1-hex { color: #012E40; }
@@ -138,10 +141,11 @@ margin과 비슷한개념. 내부여백만 작용
 .menu{position: absolute;top: 0;right: 0;bottom: 0;background: rgba(100, 100, 100, 1);width: 100vw;height: 100vh;transform: translateX(100%);transition: .3s;z-index: 4;opacity: 0;}
 .menu.click{transform: initial;transition: .3s;opacity: 1;}
 .menu.click .quit{position: absolute;right: 50px;top: 50px;cursor: pointer;font-size: 20px;z-index: 5;font-weight: bold;}
-
-
+#mobile_view{display: none;}
 /*#app .another{width: 100%;height: 100vh;background: #a99;margin-top: 10vh;}*/
-
-@media screen and (max-width:1170px){
-	*{display: none;}
 }
+@media screen and (max-width:800px){
+	#app{display: none;}
+	#particle{width: 100%;height: 100vh;overflow: hidden;position: absolute;background: #000;z-index: 0;left: 0;top: 0;bottom: 0;right: 0;opacity: 1;}
+	#bulk{position: absolute;width: 100%;height: 100vh;opacity:.3;background: linear-gradient(45deg,#000,#000);animation:change 5s infinite linear;transition-property: all;}
+	#mobile_view{width: 100%;height: 100vh;position: relative;z-index: 5;top: 0;color: #fff;}

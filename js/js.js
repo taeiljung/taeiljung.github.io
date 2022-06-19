@@ -1,6 +1,9 @@
 window.onload = main();
 function main(){
-
+    window.addEventListener('resize',()=>{
+    let mobile_check = window.getScreenDetail;  
+    console.log(mobile_check)
+    })
 }
 
 /*slide part*/

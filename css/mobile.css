@@ -1,1 +1,24 @@
 @charset "utf-8";
+*{margin: 0;padding: 0;color: #fff;font-family: 'Anek Malayalam', sans-serif;font-weight: 200;}
+body{overflow-y: hidden;}
+.menu{display: none;}
+#app{display: none;}
+#particle{width: 100%;height: 100vh;overflow: hidden;position: absolute;background: #000;z-index: 0;left: 0;top: 0;bottom: 0;right: 0;opacity: 1;}
+#bulk{position: absolute;width: 100%;height: 100vh;opacity:.3;background: linear-gradient(45deg,#000,#000);animation:change 5s infinite linear;transition-property: all;}
+
+#mobile_view{width: 100%;height: 100vh;position: relative;z-index: 5;top: 0;color: #fff;display: flex;justify-content: center;align-items: center;}
+#mobile_view .mobile_app{width: 100%;height: 100%;display: flex;flex-flow: column;align-items: center;justify-content: center;}
+#mobile_view .mobile_app .profile{margin-bottom: 5vh;width: 100px;height: 140px;display: flex;flex-flow: column;justify-content: space-between;}
+#mobile_view .mobile_app .profile .pic_circle{width: 100px;height: 100px;border-radius: 50%;background: #fff;}
+#mobile_view .mobile_app .profile .name{text-align: center;font-size: 1.2em;}
+#mobile_view .mobile_app .link_tree{width: 95%;height: 60vh;color: #000;display: flex;flex-flow: column;}
+#mobile_view .mobile_app .link_tree a{text-decoration: none;display: block;height: 80px;width: 100%;margin-bottom: 1vh;position: relative;text-align: center;line-height: 80px;z-index: 2;border: 1px solid #fafafa;font-size: 1.2em;}
+
+#mobile_view .mobile_app .link_tree a:hover::after{opacity: .3;transition: .1s;}
+#mobile_view .mobile_app .link_tree a::after{content: '';display: block;position: absolute;width: 100%;height: 100%;background: #fafafa;left: 0;top: 0;right: 0;bottom: 0;z-index: 1;opacity: 0;}
+/*#mobile_view .mobile_app .link_tree a .half{display: block;background: #fafafa;width: 250px;height: 300px;position: absolute;right: 0;top: 0;opacity: 0.5;}*/
+@keyframes change{
+0%		{background: #000;}
+50%	{background: #fff;}
+100%	{background: #000;}
+#bulk{position: absolute;width: 100%;height: 100vh;opacity:.3;background: linear-gradient(45deg,#000,#000);animation:change 5s infinite linear;transition-property: all;}

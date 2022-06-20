@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import url(./mobile.css) screen and (min-width: 0px) and (max-width: 800px);
+@import url(./mobile.css) screen and (max-width: 800px);
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
 @font-face {font-family: nanum; src: url(../fonts/NanumBarunGothicLight.ttf);}
 @font-face {font-family: Jeju; src: url(../fonts/NanumBarunGothicUltraLight.ttf);}
@@ -79,7 +79,7 @@ margin과 비슷한개념. 내부여백만 작용
 	90%		{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
 	100%	{background: linear-gradient(45deg,#026773,#3CA6A6);opacity: 0.4;}
 }*/
-#bulk{position: absolute;width: 100%;height: 100vh;opacity:.3;background: linear-gradient(45deg,#000,#000);animation:change 5s infinite linear;transition-property: all;}
+	
 
 /*#bulk.b1.vi{visibility: visible;}
 #bulk.b2{animation:change2 5s infinite linear !important;visibility: hidden;}
@@ -145,23 +145,3 @@ margin과 비슷한개념. 내부여백만 작용
 #mobile_view{display: none;}
 /*#app .another{width: 100%;height: 100vh;background: #a99;margin-top: 10vh;}*/
 }
-@media screen and (max-width:800px){
-
-	*{margin: 0;padding: 0;color: #fff;font-family: 'Anek Malayalam', sans-serif;font-weight: 200;}
-	body{overflow-y: hidden;}
-	.menu{display: none;}
-	#app{display: none;}
-	#particle{width: 100%;height: 100vh;overflow: hidden;position: absolute;background: #000;z-index: 0;left: 0;top: 0;bottom: 0;right: 0;opacity: 1;}
-	#bulk{position: absolute;width: 100%;height: 100vh;opacity:.3;background: linear-gradient(45deg,#000,#000);animation:change 5s infinite linear;transition-property: all;}
-
-	#mobile_view{width: 100%;height: 100vh;position: relative;z-index: 5;top: 0;color: #fff;display: flex;justify-content: center;align-items: center;}
-	#mobile_view .mobile_app{width: 100%;height: 100%;display: flex;flex-flow: column;align-items: center;justify-content: center;}
-	#mobile_view .mobile_app .profile{margin-bottom: 5vh;width: 100px;height: 140px;display: flex;flex-flow: column;justify-content: space-between;}
-	#mobile_view .mobile_app .profile .pic_circle{width: 100px;height: 100px;border-radius: 50%;background: #fff;}
-	#mobile_view .mobile_app .profile .name{text-align: center;font-size: 1.2em;}
-	#mobile_view .mobile_app .link_tree{width: 95%;height: 60vh;color: #000;display: flex;flex-flow: column;}
-	#mobile_view .mobile_app .link_tree a{text-decoration: none;display: block;height: 80px;width: 100%;margin-bottom: 1vh;position: relative;text-align: center;line-height: 80px;z-index: 2;border: 1px solid #fafafa;font-size: 1.2em;}
-	
-	#mobile_view .mobile_app .link_tree a:hover::after{opacity: .3;transition: .1s;}
-	#mobile_view .mobile_app .link_tree a::after{content: '';display: block;position: absolute;width: 100%;height: 100%;background: #fafafa;left: 0;top: 0;right: 0;bottom: 0;z-index: 1;opacity: 0;}
-	/*#mobile_view .mobile_app .link_tree a .half{display: block;background: #fafafa;width: 250px;height: 300px;position: absolute;right: 0;top: 0;opacity: 0.5;}*/

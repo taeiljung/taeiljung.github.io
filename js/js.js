@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-const content = "_.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._.-._";
+const content = "______________";
 const text = document.querySelector(".typing");
 console.log(text.textContent)
 let index = 0;

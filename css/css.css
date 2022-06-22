@@ -1,10 +1,10 @@
 @charset "utf-8";
-@import url(./mobile.css) screen and (max-width: 800px);
+@import url(./mobile.css) screen and (max-width: 1000px);
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;400;500;600;700;800&display=swap');
 @font-face {font-family: nanum; src: url(../fonts/NanumBarunGothicLight.ttf);}
 @font-face {font-family: Jeju; src: url(../fonts/NanumBarunGothicUltraLight.ttf);}
 
-@media screen and (min-width: 800px) and (max-width: 3000px){
+@media screen and (min-width: 1000px) and (max-width: 3000px){
 *{margin: 0;padding: 0;font-family: 'Jeju', serif;}
 
 /**/

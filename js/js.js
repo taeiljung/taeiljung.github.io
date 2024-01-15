@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-const content = "인공지능 소프트웨어학과 정태일입니다__";
+// const content = "인공지능 소프트웨어학과 정태일입니다__";
 const text = document.querySelector(".typing");
 console.log(text.textContent)
 let index = 0;
@@ -64,12 +64,12 @@ let index = 0;
      while (new Date().getTime() < start + delay); 
     }
 
-function typing(){
-    text.textContent += content[index++];
-    if(index > content.length){
-        text.textContent = ""
-        index = 0;
-        sleep(0);
-    }
-}
-setInterval(typing, 200)
+// function typing(){
+//     text.textContent += content[index++];
+//     if(index > content.length){
+//         text.textContent = ""
+//         index = 0;
+//         sleep(0);
+//     }
+// }
+// setInterval(typing, 200)
